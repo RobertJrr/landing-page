@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Teko",sans-serif;
+
+}
+
+/* Making body a flex container, 100vh and flex direction column */
+body{
+    /* min height for body be size of viewport */
+    min-height: 100vh;
+    /* make a flex container */
+    display: flex;
+    /* Make flex items display in column direction */
+    flex-direction: column;
+    background-color: #1F2937;
+
+}
+
+/* ------------Working on the MAIN SECTION----------- */
+main{
+    background-color: #1F2937;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+
+    /* max width for flex container */
+    max-width: 1000px;
+    /* adding margin to keep it all centered together */
+    margin: 0 auto;
+}
+
+
+/* logo element and header links */
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 600;
+    font-family: "Teko",sans-serif;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+
+
+.links{
+    display: flex;   
+    gap: 16px;
+    list-style-type: none;
+}
+.links li a{
+    text-decoration: none; 
+    color:#E5E7EB; 
+    font-size: 18px;
+}
+
+/* Working on Text */
+.main-text{
+    /* Making .main-text a flex container */
+    flex:1;
+    display: flex;
+    gap: 1em;
+    margin-top: 40px;
+}
+
+
+.main-text div{
+    /* making both flex items grow equally */
+    flex:1 1 300px;
+    max-height: 200px;
+    min-width: 300px;
+    
+}
+
+.main-text .sign-up{
+    /* color for flex item (main text)*/
+    background-color: #1F2937;
+}
+.main-text .place-holder{
+    /* color for another flex item (placeholder)*/
+    background-color: #687178;
+    color: #E5E7EB;
+    /* Aligning placeholder text in container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up h2{
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.sign-up p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#sign-up-button{
+    margin-top: 6px;
+    color: white;
+    background-color: #3882F6;
+    font-weight:  600;
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+}
+#sign-up-button:hover{
+    background-color: #86a5d8;
+    cursor: pointer;
+}
+
+/* -------Second Container--------- */
+
+.second-section{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#random{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Teko",sans-serif;
+    margin-bottom: 30px;
+}
+
+.boxes-container{
+    /* make .boxes a flex container */
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100px;
+    font-family: "Teko",sans-serif;
+}
+
+.blue-box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 6px;
+}
+
+/* ---------Third-Container----------- */
+
+.third-section{
+    background-color: #E5E7EB;
+    flex: 1;
+}
+
+.quote-container{
+    /* Making flex item and centering items in container */
+    display: flex;
+    flex-direction: column;
+    /* Background color */
+    background-color: #E5E7EB;
+    /* Adding width to quote container and centering*/
+    width: 400px;
+    margin: 80px auto;
+}
+#quote{
+    /* Style of the font size, font weight and font style */
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+#quotee{
+    /* Aligning quotee at edhe of container */
+    align-self: self-end;
+    font-weight: 600;
+    color: #1F2937
+}
+
+/* ---------Fourth Container-------- */
+.fourth-section{
+    background-color: #F9FAF8;
+    flex: 1;
+}
+
+.call-to-action{
+    /* making conainter a flex container */
+    display: flex;
+    background-color: #3882F6;
+    padding: 1.4em;
+    border-radius: 6px;
+    max-width: 700px;
+    margin: 5em auto;
+    color: #E5E7EB;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+#text p{
+    font-weight: lighter;
+}
+
+.call-to-action #sign-up-button{
+    border: 2px solid #E5E7EB;
+    height: 2.5em
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: #E5E7EB;
+    letter-spacing: 0.1em ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
